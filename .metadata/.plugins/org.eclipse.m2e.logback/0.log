@@ -1,0 +1,5 @@
+2024-10-28 18:40:59,026 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-10-28 18:41:35,782 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/am/ik/archetype/maven-reactjs-blank-archetype/1.0.0/maven-reactjs-blank-archetype-1.0.0.pom
+2024-10-28 18:41:35,810 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/am/ik/archetype/maven-reactjs-blank-archetype/1.0.0/maven-reactjs-blank-archetype-1.0.0.pom
+2024-10-28 18:41:36,051 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/am/ik/archetype/maven-reactjs-blank-archetype/1.0.0/maven-reactjs-blank-archetype-1.0.0.jar
+2024-10-28 18:41:36,115 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/am/ik/archetype/maven-reactjs-blank-archetype/1.0.0/maven-reactjs-blank-archetype-1.0.0.jar
