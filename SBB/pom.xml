@@ -7,6 +7,14 @@
   <version>1.0-SNAPSHOT</version>
   <name>SBB Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <repositories>
+    <repository>
+      <id>central</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,6 +31,15 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>SBB</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

@@ -12,6 +12,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <%--    <link rel="stylesheet" href="css/bootstrap.css">--%>
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>JSP 게시판 웹사이트</title>
 </head>
@@ -71,7 +72,7 @@
                         </label>
 
                         <label class="btn btn-primary">
-                            <input type="radio" name="userGender" autocomplete="off" value="여자" checked>남자
+                            <input type="radio" name="userGender" autocomplete="off" value="여자" checked>여자
                         </label>
                     </div>
                 </div>
