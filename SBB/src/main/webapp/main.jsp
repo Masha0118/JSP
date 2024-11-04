@@ -1,6 +1,7 @@
 
 <%@ page contentType="text/html; charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ page import="java.io.PrintWriter" %>
+<%@ page import="user.UserDAO" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +19,16 @@
     String userID = null;
     if (session.getAttribute("userID") != null) {
         userID = (String) session.getAttribute("userID");
+    }
+
+    UserDAO userDAO = new UserDAO();
+    boolean isConnected = userDAO.testConnection();
+
+    String connectionStatusMessage;
+    if (isConnected) {
+        connectionStatusMessage = "연결 성공";
+    } else {
+        connectionStatusMessage = "연결 실패";
     }
 %>
 
@@ -83,6 +94,9 @@
             <p><a class="btn btn-primary btn-pull" href="#" role="button">자세히 알아보기</a></p>
         </div>
     </div>
+    <div class="alert alert-info">
+        <strong>DB 상태 :</strong> <%= connectionStatusMessage %>
+    </div>
 </div>
 
 <div class="container">
@@ -96,7 +110,7 @@
             <div class="item active">
                 <img src="images/1.jpg">
             </div>
-            <div class="ite
+            <div class="item">
                 <img src="images/2.jpg">
             </div>
             <div class="item">
